@@ -1,0 +1,65 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif; /*  Elegant font choice */
+    background-color: white; /*  Background color */
+    color: #333; /*  Text color */
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: orange; /*  Heading color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /*  Subtle shadow for depth */
+  }
+
+  a {
+    color: orange; /*  Link color */
+    text-decoration: none; /*  No underline */
+    transition: color 0.3s ease; /*  Smooth color transition */
+  }
+
+  a:hover {
+    color: #ff7f50; /*  Lighter orange on hover */
+  }
+
+  button {
+    background-color: orange; /*  Button background */
+    color: white; /*  Button text color */
+    border: none; /*  No border */
+    padding: 10px 20px; /*  Padding */
+    border-radius: 5px; /*  Rounded corners */
+    cursor: pointer; /*  Pointer cursor */
+    transition: background-color 0.3s ease; /*  Smooth background transition */
+  }
+
+  button:hover {
+    background-color: #ff7f50; /*  Lighter orange on hover */
+  }
+
+  .container {
+    max-width: 1200px; /*  Max width for content */
+    margin: 0 auto; /*  Center content */
+    padding: 20px; /*  Padding */
+  }
+
+  .card {
+    background: white; /*  Card background */
+    border-radius: 10px; /*  Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /*  Subtle shadow for depth */
+    overflow: hidden; /*  Clip overflow */
+    transition: transform 0.3s ease; /*  Smooth transform */
+  }
+
+  .card:hover {
+    transform: translateY(-5px); /*  Lift effect on hover */
+  }
+
+  .luxury-effect {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /*  Luxurious gradient */
+    box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff; /*  3D effect */
+  }
+`;
+
+export default GlobalStyle;
